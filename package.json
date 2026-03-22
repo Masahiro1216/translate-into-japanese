@@ -1,0 +1,13 @@
+{
+  "name": "translate-into-japanese",
+  "version": "1.0.0",
+  "description": "選択テキストを日本語に翻訳するGreasemonkeyユーザースクリプト",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=dist/translate-into-japanese.user.js --banner:js=\"$(cat src/meta.js)\" --format=iife --target=es2020",
+    "watch": "esbuild src/index.ts --bundle --outfile=dist/translate-into-japanese.user.js --banner:js=\"$(cat src/meta.js)\" --format=iife --target=es2020 --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "typescript": "^5.4.0"
+  }
+}
